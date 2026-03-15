@@ -1,6 +1,8 @@
 # Dell Inspiron 7560 黑苹果 (macOS 12.7)
 
-本仓库提供 **Dell Inspiron 7560** 的 Hackintosh EFI 配置，基于 **OpenCore** 引导，运行 **macOS Monterey 12.7**。
+- 🇨🇳 [简体中文](README_CN.md)
+- 🇺🇸 [English](README.md)
+提供 **Dell Inspiron 7560** 的 Hackintosh EFI 配置，基于 **OpenCore** 引导，运行 **macOS Monterey 12.7**。
 
 该配置已经可以稳定日常使用，WiFi、蓝牙、AirDrop 等功能均正常。
 ![About This Mac](About.PNG)
