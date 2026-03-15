@@ -94,3 +94,26 @@ Use **GenSMBIOS** to generate new values and update:
 - SystemUUID
 
 After generating new SMBIOS values, update them in:
+config.plist → PlatformInfo → Generic
+
+
+---
+
+
+
+## Notes
+
+This EFI was built and tested specifically for:
+
+Dell Inspiron 7560  
+Intel i7-7200U
+
+Other hardware variants may require additional configuration.
+
+---
+
+## Disclaimer
+
+This repository is provided for **educational purposes only**.
+
+Use at your own risk.
