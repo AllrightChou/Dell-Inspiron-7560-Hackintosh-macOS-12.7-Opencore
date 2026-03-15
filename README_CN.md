@@ -13,7 +13,7 @@
 | 硬件 | 型号 |
 |---|---|
 | 笔记本 | Dell Inspiron 7560 |
-| CPU | Intel Core i7-7200U |
+| CPU | Intel Core i5-7200U |
 | 核显 | Intel HD Graphics 620 |
 | WiFi / 蓝牙 | Broadcom BCM94352Z (DW1560) |
 | 有线网卡 | Realtek RTL8111 |
@@ -134,7 +134,7 @@ config.plist → PlatformInfo → Generic
 
 
 Dell Inspiron 7560
-Intel i7-7200U
+Intel i5-7200U
 macOS 12.7
 
 
