@@ -1,0 +1,147 @@
+# Dell Inspiron 7560 黑苹果 (macOS 12.7)
+
+本仓库提供 **Dell Inspiron 7560** 的 Hackintosh EFI 配置，基于 **OpenCore** 引导，运行 **macOS Monterey 12.7**。
+
+该配置已经可以稳定日常使用，WiFi、蓝牙、AirDrop 等功能均正常。
+
+---
+
+# 设备配置
+
+| 硬件 | 型号 |
+|---|---|
+| 笔记本 | Dell Inspiron 7560 |
+| CPU | Intel Core i7-7200U |
+| 核显 | Intel HD Graphics 620 |
+| WiFi / 蓝牙 | Broadcom BCM94352Z (DW1560) |
+| 有线网卡 | Realtek RTL8111 |
+| 显示屏 | 1080P (已开启 HiDPI) |
+| 触控板 | I2C / PS2 触控板 |
+
+---
+
+# 系统版本
+
+**macOS Monterey 12.7**
+
+该版本在 Kaby Lake 平台上稳定性最好，同时软件兼容性也较好。
+
+---
+
+# 功能状态
+
+| 功能 | 状态 |
+|---|---|
+| 核显加速 | 正常 |
+| WiFi | 正常 |
+| 蓝牙 | 正常 |
+| AirDrop | 正常 |
+| 有线网络 | 正常 |
+| 声卡 | 正常 |
+| USB | 正常 |
+| 电池显示 | 正常 |
+| 睡眠 / 唤醒 | 正常 |
+| HiDPI | 已开启 |
+
+---
+
+# HiDPI
+
+通过工具：
+
+
+onekey-hidpi
+
+
+开启 HiDPI，使 1080P 屏幕获得类似 Retina 的显示效果。
+
+---
+
+# WiFi 网卡更换
+
+原机 Intel 无线网卡已更换为：
+
+**DW1560 (Broadcom BCM94352Z)**
+
+优点：
+
+- 原生支持 macOS WiFi
+- 蓝牙正常
+- 支持 AirDrop / Continuity
+
+---
+
+# 触控板
+
+触控板基本可用，但：
+
+**点按拖动体验不佳**
+
+推荐在系统中开启：
+
+
+三指拖动
+
+
+路径：
+
+
+系统设置 → 辅助功能 → 指针控制 → 触控板选项 → 三指拖动
+
+
+开启后使用体验明显更好。
+
+---
+
+# 重要说明 (SMBIOS)
+
+使用本 EFI 前 **必须重新生成 SMBIOS 信息**。
+
+不要直接使用仓库中的序列号。
+
+可以使用工具：
+
+
+GenSMBIOS
+
+
+生成新的：
+
+- SerialNumber
+- MLB
+- SystemUUID
+
+然后修改：
+
+
+config.plist → PlatformInfo → Generic
+
+
+---
+
+# 已知问题
+
+- 触控板 **点按拖动不太好用**
+- 建议使用 **三指拖动** 作为替代方案
+
+---
+
+# 注意
+
+该 EFI 仅在以下配置测试：
+
+
+Dell Inspiron 7560
+Intel i7-7200U
+macOS 12.7
+
+
+其他配置可能需要自行调整。
+
+---
+
+# 声明
+
+本项目仅供学习交流使用。
+
+请勿用于商业用途。
