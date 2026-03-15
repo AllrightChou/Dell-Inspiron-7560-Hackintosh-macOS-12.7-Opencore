@@ -16,7 +16,7 @@ The system is stable for daily use and supports Wi-Fi, Bluetooth, and AirDrop.
 | Component | Model |
 |---|---|
 | Laptop | Dell Inspiron 7560 |
-| CPU | Intel Core i7-7200U (Kaby Lake) |
+| CPU | Intel Core i5-7200U (Kaby Lake) |
 | iGPU | Intel HD Graphics 620 |
 | Wi-Fi / Bluetooth | Broadcom BCM94352Z (DW1560) |
 | Ethernet | Realtek RTL8111 |
